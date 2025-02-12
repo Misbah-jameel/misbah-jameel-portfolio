@@ -9,13 +9,12 @@ type Star = {
   duration: number;
 };
 
-const StarBackground = ({ children }: { children: React.ReactNode }) => {
+const StarBackgroundLayout = ({ children }: { children: React.ReactNode }) => {
   const [stars, setStars] = useState<Star[]>([]);
 
   useEffect(() => {
-    // Generate unique stars with crypto.randomUUID()
     const newStars = Array.from({ length: 150 }).map(() => ({
-      id: crypto.randomUUID(), // More reliable unique ID
+      id: crypto.randomUUID(),
       top: Math.random() * 100,
       left: Math.random() * 100,
       delay: Math.random() * 5,
@@ -40,10 +39,10 @@ const StarBackground = ({ children }: { children: React.ReactNode }) => {
         />
       ))}
 
-      {/* Content Layer */}
+      {/* Page Content */}
       <div className="relative z-10">{children}</div>
     </div>
   );
 };
 
-export default StarBackground;
+export default StarBackgroundLayout;
