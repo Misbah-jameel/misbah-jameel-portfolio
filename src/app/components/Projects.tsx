@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 
+
 const projects = [
   {
     title: "E-commerce Website",
@@ -44,6 +45,7 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-black">
+  
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-pink-500 via-purple-500 to-sky-500 bg-clip-text text-transparent italic">
           My Projects
@@ -81,6 +83,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
+    
     </section>
   );
 };

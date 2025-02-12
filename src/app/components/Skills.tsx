@@ -2,6 +2,7 @@
 
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaFigma, FaCode, FaPaintBrush, FaDatabase } from "react-icons/fa";
 
+
 const skills = [
   { name: "HTML", icon: FaHtml5 },
   { name: "CSS", icon: FaCss3Alt },
@@ -16,6 +17,7 @@ const skills = [
 
 const Skills = () => {
   return (
+    
     <section id="skills" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-pink-500 via-purple-500 to-sky-500 bg-clip-text text-transparent italic">

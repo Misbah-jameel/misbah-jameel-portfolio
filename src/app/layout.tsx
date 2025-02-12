@@ -2,7 +2,9 @@ import "./globals.css"
 import { Montserrat } from "next/font/google"
 
 import type React from "react"
-import StarBackground from "./StarBackground/page"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+
 
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" })
@@ -20,15 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} font-sans bg-black text-white`}>
-
           <div className="flex">
-          
             <main className="flex-1 transition-all duration-300 ease-in-out">
-            <StarBackground>
+              <Navbar/>
               {children}
-              </StarBackground>
+              <Footer/>
             </main>
-           
           </div>
       </body>
     </html>

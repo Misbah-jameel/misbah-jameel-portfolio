@@ -1,4 +1,4 @@
-import StarBackground from "@/app/StarBackground/page"
+
 import Hero from '@/app/Hero/Hero'
 import Navbar from '../components/Navbar';
 import About from '../components/About';
@@ -10,7 +10,6 @@ import Footer from '../components/Footer';
 export default function Home() {
   return (
     <div>
-        <StarBackground>
       <Navbar />
       <Hero/>
       <About />
@@ -19,7 +18,6 @@ export default function Home() {
       <Education />
       <Contact />
       <Footer />
-      </StarBackground>
     </div>
   );
 }

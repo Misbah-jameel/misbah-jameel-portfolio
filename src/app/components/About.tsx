@@ -1,8 +1,12 @@
 "use client";
 
+
+
 const About = () => {
   return (
+
     <section id="about" className="py-20 bg-black">
+      
       <div className="container mx-auto px-4">
         {/* Heading */}
         <h2 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-pink-500 via-purple-500 to-sky-500 bg-clip-text text-transparent italic">
