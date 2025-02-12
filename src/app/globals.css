@@ -19,3 +19,95 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Sky Blue */
+  color: #333;
+}
+
+.navbar {
+  background-color: #800080; /* Purple */
+  padding: 1rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* .welcome-section, .about-section, .skills-section, .projects-section, .education-section, .contact-section {
+  padding: 2rem;
+  text-align: center;
+} */
+
+
+
+.about-section {
+  background-color: #87ceeb; /* Sky Blue */
+}
+
+.skills-section {
+  background-color: #ff69b4; /* Pink */
+}
+
+.projects-section {
+  background-color: #87ceeb; /* Sky Blue */
+}
+
+.education-section {
+  background-color: #ff69b4; /* Pink */
+}
+
+.contact-section {
+  background-color: #87ceeb; /* Sky Blue */
+}
+
+.footer {
+  background-color: #800080; /* Purple */
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+@keyframes star {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-star {
+  animation: star infinite ease-in-out;
+}
+@keyframes star {
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-100vh) scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.animate-star {
+  animation: star linear infinite;
+}
